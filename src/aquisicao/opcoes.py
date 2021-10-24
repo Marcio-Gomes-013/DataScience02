@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class ETL(Enum):
+class EnumETL(Enum):
     censo_escolar = "CENSO_ESCOLAR"
 
 
