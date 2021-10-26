@@ -6,14 +6,14 @@ import pandas as pd
 
 class BaseETL(abc.ABC):
     """
-    Classe que estrutura como qualque  objeto de ETL deve funciona
+    Classe que estrutura como qualquer  objeto de ETL deve funciona
     """
 
     caminho_entrada: Path
     caminho_saida: Path
 
     """
-    Um UnderLine na frente significa PROTECTED
+    Um UnderLine na frente significa PROTECTED    
     """
     _dados_entrada: typing.Dict[str, pd.DataFrame]
     _dados_saida: typing.Dict[str, pd.DataFrame]
@@ -86,3 +86,5 @@ class BaseETL(abc.ABC):
         self.extract()
         self.transform()
         self.load()
+    
+    
