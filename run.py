@@ -30,5 +30,6 @@ def processa_dado(etl: str, entrada: str, saida: str, criar_caminho: str) -> Non
     objeto = ETL_DICT[EnumETL(etl)](entrada, saida, criar_caminho)
     objeto.pipeline()
 
+
 if __name__ == "__main__":
     cli()
